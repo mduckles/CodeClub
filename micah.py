@@ -10,7 +10,7 @@ mc = Minecraft.create()
 
 #for i in 0 to 3:
 
-def micah_house( x, y, z ):
+def house( x, y, z ):
     block_id = 5#wood
     mc.setBlock(x,y,z,block_id)
     mc.setBlock(x,y+1,z,block_id)
@@ -80,29 +80,29 @@ def micah_house( x, y, z ):
     mc.setBlock(x+1,y,z-1,block_id,8)
 
 
+def houses():
+    pos = mc.player.getTilePos()
 
-pos = mc.player.getTilePos()
-    
-x =pos.x
-y =pos.y 
-z =pos.z 
+    x =pos.x
+    y =pos.y 
+    z =pos.z 
 
-micah_house(x,y,z)
+    house(x,y,z)
 
-x =pos.x
-y =pos.y
-z =pos.z + 4   
-micah_house(x,y,z)
-x =pos.x
-y =pos.y
-z =pos.z + 8  
-micah_house(x,y,z)
-x =pos.x
-y =pos.y
-z =pos.z + 12  
-micah_house(x,y,z)
-x =pos.x
-y =pos.y
-z =pos.z + 16  
-micah_house(x,y,z)
+    x =pos.x
+    y =pos.y
+    z =pos.z + 4   
+    house(x,y,z)
+    x =pos.x
+    y =pos.y
+    z =pos.z + 8  
+    house(x,y,z)
+    x =pos.x
+    y =pos.y
+    z =pos.z + 12  
+    house(x,y,z)
+    x =pos.x
+    y =pos.y
+    z =pos.z + 16  
+    house(x,y,z)
 
